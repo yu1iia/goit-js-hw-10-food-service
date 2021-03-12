@@ -3,9 +3,8 @@ const Theme = {
   DARK: 'dark-theme',
 };
 const bodyRef = document.body;
-const switchRef = document.querySelector('#theme-switch-toggle');
-
 bodyRef.classList.add(Theme.LIGHT);
+const switchRef = document.querySelector('#theme-switch-toggle');
 
 switchRef.addEventListener('change', handleCheckbox);
 

@@ -2,7 +2,7 @@ const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
-const bodyRef = document.querySelector('body');
+const bodyRef = document.body;
 const switchRef = document.querySelector('#theme-switch-toggle');
 
 switchRef.addEventListener('change', handleCheckbox);

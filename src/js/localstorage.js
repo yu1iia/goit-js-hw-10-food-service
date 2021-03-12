@@ -5,6 +5,8 @@ const Theme = {
 const bodyRef = document.body;
 const switchRef = document.querySelector('#theme-switch-toggle');
 
+bodyRef.classList.add(Theme.LIGHT);
+
 switchRef.addEventListener('change', handleCheckbox);
 
 reloadTheme();

@@ -11,6 +11,7 @@ switchRef.addEventListener('change', handleCheckbox);
 reloadTheme();
 
 function handleCheckbox() {
+  
   if (switchRef.checked) {
     bodyRef.classList.remove(Theme.LIGHT);
     bodyRef.classList.add(Theme.DARK);

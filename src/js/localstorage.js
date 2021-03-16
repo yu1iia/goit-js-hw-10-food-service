@@ -3,7 +3,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 const bodyRef = document.body;
-bodyRef.classList.add(Theme.LIGHT);
+
 const switchRef = document.querySelector('#theme-switch-toggle');
 
 switchRef.addEventListener('change', handleCheckbox);
@@ -27,5 +27,7 @@ function reloadTheme() {
   if (localStorage.getItem('theme') === Theme.DARK) {
     bodyRef.classList.add(Theme.DARK);
     switchRef.checked = true;
-  }
+  } else {
+    bodyRef.classList.add(Theme.LIGHT);
+    }
 }
